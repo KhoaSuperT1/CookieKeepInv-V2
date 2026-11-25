@@ -1,14 +1,24 @@
+<div align="center">
+
+<img src=".github/logo.jpg" alt="Java-Cookieee" width="180" />
+
 # CookieKeepInv-V2
 
-[![Minecraft](https://img.shields.io/badge/Minecraft-1.21%20--%2026.3%20(1.26.3)-brightgreen.svg)](https://papermc.io)
-[![Platform](https://img.shields.io/badge/Platform-Spigot%20%7C%20Paper%20%7C%20Purpur%20%7C%20Folia-blue.svg)](https://papermc.io)
-[![Java](https://img.shields.io/badge/Java-21%2B-orange.svg)](https://adoptium.net/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![Discord](https://img.shields.io/discord/0?label=Discord%20Support&color=5865F2)](https://discord.gg/NZycRMWrSS)
+**High-performance economy-based KeepInventory plugin for Spigot, Paper, Purpur, and Folia.**
 
-**CookieKeepInv-V2** is a high-performance, recoded economy-based KeepInventory plugin for **Minecraft 1.21 through 26.3 (1.26.3)** across **Spigot, Paper, Purpur, and Folia** servers.
+[![Minecraft](https://img.shields.io/badge/Minecraft-1.21--1.26.3-16a34a?style=flat-square)](https://papermc.io)
+[![Java](https://img.shields.io/badge/Java-21%20%7C%2025-ea580c?style=flat-square)](https://adoptium.net)
+[![Platform](https://img.shields.io/badge/Platform-Spigot%20%7C%20Paper%20%7C%20Purpur%20%7C%20Folia-2563eb?style=flat-square)](https://papermc.io)
+[![Version](https://img.shields.io/badge/Version-2.0.0-334155?style=flat-square)](https://github.com/KhoaSuperT1/CookieKeepInv-V2)
+[![License: MIT](https://img.shields.io/badge/License-MIT-eab308?style=flat-square)](LICENSE)
 
-When a player dies, CookieKeepInv-V2 automatically evaluates world rules, PvP settings, bypass/discount permissions, cooldowns, and empty-inventory protection before charging a configurable percentage of their balance or a flat Vault fee to preserve their items and experience.
+[Original Project (Kesuaheli)](https://hangar.papermc.io/Kesuaheli/KeepInventoryCost) · [Support Discord](https://discord.gg/NZycRMWrSS) · [MIT License](LICENSE)
+
+</div>
+
+---
+
+When a player dies, **CookieKeepInv-V2** automatically evaluates world rules, PvP settings, bypass/discount permissions, cooldowns, and empty-inventory protection before charging a configurable percentage of their balance or a flat Vault fee to preserve their items and experience.
 
 ---
 
