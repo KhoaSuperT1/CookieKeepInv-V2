@@ -1,0 +1,55 @@
+name: CookieKeepInv-V2
+version: '${project.version}'
+main: de.kesuaheli.keepinventorycost.KeepInventoryCost
+api-version: "1.21"
+folia-supported: true
+authors: [Java-Cookieee]
+description: Advanced economy-based KeepInventory plugin with percent/flat pricing, anti-exploit guards, PvP/world controls, and Folia support. Recoded from Kesuaheli's KeepInventoryCost.
+website: https://github.com/KhoaSuperT1/CookieKeepInv-V2
+depend: [Vault]
+
+commands:
+  keepinventory:
+    description: Manage your personal KeepInventory setting and preview death cost.
+    aliases: [keepinv, ki, cookiekeepinv]
+    permission: cookiekeepinv.command.base
+    usage: |-
+      Usage:
+      /<command> [toggle|on|off|get|status|cost]
+      /<command> set <true|false>
+  keepinventoryadmin:
+    description: CookieKeepInv-V2 admin commands.
+    aliases: [keepinvadmin, kia, ckia]
+    permission: cookiekeepinv.command.admin
+    usage: |-
+      Usage:
+      /<command> reload
+      /<command> status
+      /<command> check <player>
+      /<command> set <player> <true|false>
+      /<command> debug <true|false>
+
+permissions:
+  cookiekeepinv.command.base:
+    description: Allows usage of the /keepinventory command
+    default: true
+  cookiekeepinv.command.admin:
+    description: Allows usage of the /keepinventoryadmin command
+    default: op
+    children:
+      cookiekeepinv.command.base: true
+      de.kesuaheli.keepinventorycost.command.admin: true
+      de.kesuaheli.keepinventorycost.command.base: true
+  cookiekeepinv.bypass:
+    description: Keep inventory and XP for free without paying
+    default: false
+  de.kesuaheli.keepinventorycost.command.base:
+    description: Legacy permission node for /keepinventory
+    default: true
+    children:
+      cookiekeepinv.command.base: true
+  de.kesuaheli.keepinventorycost.command.admin:
+    description: Legacy permission node for /keepinventoryadmin
+    default: op
+    children:
+      cookiekeepinv.command.admin: true

@@ -1,0 +1,47 @@
+debug: false
+default-enabled: true
+allow-player-toggle: true
+require-opt-in: false
+
+cost: percent
+number: 5.0
+
+require-positive-balance: true
+min-percent-cost: 1.0
+max-percent-cost: 0.0
+min-money-cost: 1.0
+auto-disable-on-economy-error: true
+
+keep-inventory: true
+keep-xp: true
+keep-on-pvp: true
+charge-on-empty-inventory: false
+respect-vanishing-curse: true
+cooldown-seconds: 0
+disabled-worlds: []
+
+discount-tiers:
+  cookiekeepinv.discount.vip: 25.0
+  cookiekeepinv.discount.mvp: 50.0
+
+sound:
+  enabled: true
+  paid: entity.experience_orb.pickup
+  no-money: entity.villager.no
+
+message:
+  prefix: "[<dark_purple>CookieKeepInv<reset>]"
+  enabled: "<green>Enabled<reset>"
+  disabled: "<red>Disabled<reset>"
+  reload: "<green>Configuration reloaded successfully!"
+  reload-invalid: "<red>Configuration reloaded with errors! Check console; keep mechanic paused."
+  toggle-disabled: "<red>Personal KeepInventory toggling is disabled by the server."
+  setting.get: "Your KeepInv setting is currently {state}. Estimated next death cost: <gold>{cost}<reset>."
+  setting.set: "Your KeepInv setting is now {state}!"
+  setting.set_refuse: "Your KeepInv setting is already {state}!"
+  cost.preview: "Estimated death cost: <gold>{cost}<reset> (Balance: <yellow>{balance}<reset>, Discount: <aqua>{discount}%<reset>)."
+  cost.bypass: "<green>You have free KeepInventory bypass permission!"
+  death.no_money: "<red>You didn't have enough {currency} to keep your items. Required: <gold>{cost}<red>."
+  death.paid: "<green>You paid <gold>{cost}<green> to keep your items and XP!"
+  death.bypass: "<green>Your items and XP were kept for free (bypass)!"
+  death.cooldown: "<red>KeepInventory is on cooldown for <gold>{cooldown}s<red>. Your items were dropped."
